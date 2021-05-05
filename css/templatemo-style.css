@@ -12,7 +12,14 @@ http://www.templatemo.com/preview/templatemo_427_timeline
 html {
     box-sizing: border-box;
 }
-
+html,body, nav
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -31,7 +38,7 @@ html {
     margin-top: -50px;
 }
 
-.navbar-default {
+/* .navbar-default {
     background-color: #343a40;
     border-color: transparent;
 }
@@ -72,9 +79,9 @@ html {
 .navbar-right a:hover {
   /*background-color: #fff !important;*/
   /*color: #8bc655 !important;*/
-}
+/* } */
 
-.navbar-right li {
+/* .navbar-right li {
     height: 50px;
     position: relative;
     z-index: 210;
@@ -100,7 +107,7 @@ html {
 
 .navbar-right li:hover a {
     color: #7cb14a !important;
-}
+}  */
 
 #big-banner {
     /* background-image: url(../images/big-image.jpg); */
@@ -151,6 +158,20 @@ html {
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+.heading-insta {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.heading-insta h2 {
+    font-family: 'Dosis';
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 30px;
 }
 
 .heading h2 {
@@ -205,6 +226,7 @@ html {
         margin-top: 3em;
         margin-bottom: 3em;
     }
+
 
     #cd-timeline::before, #cd-timeline-2::before {
         left: 50%;
@@ -284,7 +306,7 @@ html {
 }
 
 .cd-timeline-img:hover {
-    background-color: #343a40;
+    background-color: #435466;
     cursor: pointer;
 }
 
@@ -455,7 +477,12 @@ html {
     border-right: 7px solid white;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+    .image-land{
+        width: 200px!important;
+        height: 200px!important;
+
+    }
 }
 
 @media only screen and (min-width: 1170px) {
@@ -669,12 +696,12 @@ html {
 }
 
 #map {
-    background-image: url(../images/map-bg.png);
+    /* background-image: url(../images/map-bg.png); */
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    
-    height: 680px;
+    margin-bottom: 50px;
+    height: auto;
 }
 
 #map h4 {
@@ -890,7 +917,7 @@ footer {
 }
 
 @media (max-width:767px) {
-    .navbar-default .navbar-toggle {
+    /* .navbar-default .navbar-toggle {
         border-color: #8bc655;
         color: #fff;
     }
@@ -905,7 +932,7 @@ footer {
         text-align: center;
         border-color: #8bc655;
         border-top: 1px solid #8bc655;
-    }
+    } */
 
     .contact {
         border-bottom: 1px solid #8bc655;
